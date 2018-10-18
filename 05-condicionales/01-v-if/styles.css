@@ -1,0 +1,28 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+body {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+div, p {
+    width: 100%;
+    height: auto;
+    background-color: #28BB4A;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-top: 15px;
+    border: 2px solid #777;
+    font-family: 'Raleway', sans-serif;
+    color: #eee;
+    text-align: center;
+}
+
+p {
+    background-color: #eee;
+    color: #888;
+    float: left;
+}
