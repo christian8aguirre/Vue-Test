@@ -1,0 +1,69 @@
+
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+#misTareas {
+    width: 550px;
+    height: auto;
+    background-color: #f9f9f9;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px #999;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 97%;
+    margin: 0 auto;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 22px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+}
+
+li{
+    width: 96%;
+    height: auto;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 22px;
+    margin-top: 15px;
+    background-color: #fff;
+    color: #666;
+    list-style: none;
+    outline: none;
+    margin-left: -20px;
+    border: 1px solid #ddd;
+    float: left;
+}
+
+.completada {
+    width: 20px;
+    height: 20px;
+    float: right;
+    background-image: './img/completada.png';
+    background-repeat: no-repeat;
+    background-size: 20px;
+    margin-top: 6px;
+    color: #aaa;
+}
+
+.tachar{
+    color: #bbb;
+    background-color: #f9f9f9;
+    text-decoration: line-through;
+    border-color: #f9f9f9;
+}

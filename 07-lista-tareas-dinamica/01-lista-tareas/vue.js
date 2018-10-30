@@ -1,14 +1,17 @@
 let vm = new Vue({
-    el: '#misTareas',
+    el: "#misTareas",
     data:{
-        nuevaTarea: '',
+        nuevaTarea: "",
         tareas: [],
     },
     methods: {
-        // addTarea: function () {
-        //     if(this.nuevaTarea != '')
-        //     this.tareas.push({ text: this.nuevaTarea, completada: false})
-        //     this.nuevaTarea='';
-        // }
+        addTarea: function () {
+            if(this.nuevaTarea !== "")
+            this.tareas.push({ text: this.nuevaTarea, completada: false})
+            this.nuevaTarea="";
+        },
+        compTarea: function (tarea) {
+            tarea.completada=!tarea.completada;
+        }
     }
 })
