@@ -50,11 +50,11 @@ li{
     float: left;
 }
 
-.completada {
+.completada{
     width: 20px;
     height: 20px;
     float: right;
-    background-image: './img/completada.png';
+    background-image: url("./img/completada.png");
     background-repeat: no-repeat;
     background-size: 20px;
     margin-top: 6px;
