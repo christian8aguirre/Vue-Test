@@ -2,32 +2,39 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reproductor de YouTube</title>
     <link rel="stylesheet" href="./estilos.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
 </head>
 <body>
     <div id="main">
         <div id="menu"></div>
 
         <div id="buscador" class="animated fadeIn">
-            <input type="text" placeholder="Añade una URL de YouTube...">
-            <input type="text" placeholder="Añade un título al video ..." id="ttl">
+            <input type="text" placeholder="Añade una URL de YouTube..." v-model="laURL"
+                v-show="!mostrar"
+                @keyup.enter="showTitulo">
+            <input type="text" placeholder="Añade un título al video ..." id="ttl" v-model="elTitulo"
+                v-show="mostrar"
+                v-model="elTitulo"
+                @keyup.enter="addDatos">
         </div>
 
         <div id="listado" class="animated bounceInLeft">
             <ul>
-                <li class="animated bounceInLeft">
-                    <!-- <div class="titulo"></div> -->
+                <li class="animated bounceInLeft"
+                    v-for="video in videos"
+                    @click="playVideo(video)">
+                    <div class="titulo">{{ video.titulo }}</div>
                 </li>
             </ul>
         </div>
-        <iframe id="rpd" allow="autoplay" src="" ></iframe>
+
+        <iframe id="rpd" allow="autoplay" :src="videoActivo" ></iframe>
     </div>
-    <script src="./vue.js"></script>
-    <script src="./dimensiones.js"></script>
+
+    <script src="vue.js"></script>
+    <script src="dimensiones.js"></script>
 </body>
 </html>
