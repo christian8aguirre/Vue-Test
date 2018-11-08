@@ -37,8 +37,9 @@
             v-for="video in videos"
             @click="playVideo(video)"
             :class="{activo:video.activo}"
+            @contextmenu.prevent="delVideo(video)"
           >
-            <div class="titulo">{{ video.titulo }}</div>
+            <div class="titulo" :title="video.titulo">{{ video.titulo }}</div>
           </li>
         </ul>
       </div>

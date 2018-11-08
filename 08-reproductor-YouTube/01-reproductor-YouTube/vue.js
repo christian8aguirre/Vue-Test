@@ -37,6 +37,10 @@ let vm = new Vue({
         this.videos[i].activo = false;
       }
       video.activo = true;
+    },
+    delVideo: function(video) {
+      this.videos.splice(this.videos.indexOf(video), 1);
+      localStorage.setItem("pistas", JSON.stringify(this.videos));
     }
   }
 });
