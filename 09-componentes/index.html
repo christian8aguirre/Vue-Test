@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Componentes</title>
+</head>
+
+<body>
+    <main>
+        <!-- Cuarta alternativa de Template -->
+        <mi-componente inline-template>
+            <div>
+                <h1>Componentes</h1>
+                <p>Esto es un componente</p>
+                <p> lo puedo utilizar tantas veces como quiera.</p>
+                <p><b>{{ nuevoTexto }}</b></p>
+            </div>
+        </mi-componente>
+    </main>
+
+
+
+
+    <!-- Tercera alternativa de Template
+    <template id="mi-plantilla">
+        <div>
+            <h1>Componentes</h1>
+            <p>Esto es un componente</p>
+            <p> lo puedo utilizar tantas veces como quiera.</p>
+            <p><b>{{ nuevoTexto }}</b></p>
+        </div>
+    </template>
+    -->
+
+    <!-- Segunda alternativa de Template
+    <script type="text/template" id="mi-plantilla">
+        <div>
+            <h1>Componentes</h1>
+            <p>Esto es un componente</p>
+            <p> lo puedo utilizar tantas veces como quiera.</p> <p><b>{{ nuevoTexto }}</b></p>
+        </div>
+    </script> -->
+
+    <script src="./vue.js"></script>
+</body>
+
+</html>
